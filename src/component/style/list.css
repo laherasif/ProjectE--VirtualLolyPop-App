@@ -1,0 +1,58 @@
+.head{
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    border-bottom-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: #fa73d9 0 0 8px;
+}
+
+.container-list{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 35px; 
+    text-align: center;
+    font-family: Yellowtail,cursiv;
+    background-color: #21212b;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.Loly-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Loly-container .loly{
+    margin-right: 50px;
+}
+.Loly-container .link {
+    background-color: black;
+    box-shadow: none;
+    width: 100%;
+}
+.Loly-container .link a {
+    letter-spacing: 3px;
+    color: #fa73d9;
+}
+.Loly-container .Data{
+    /* border: 1pt solid #000; */
+    
+    font-family: Yellowtail,cursive;
+    font-size: 1.6em;
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-style: italic;
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+.Loly-container h3{
+    font-size: 14px;
+    overflow: hidden;
+}

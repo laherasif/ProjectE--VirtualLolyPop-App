@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    background-color: #21212b;
+    color: #dadadb;
+    font-family: open-sans,Helvetica,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+    min-height: 100vh;
+    background: #21212b;
+}
+
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+
+.loly h1{
+    font-size: 8ch;
+    font-weight: 300;
+            color: #fff;
+            border-bottom-style: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: #fa73d9 0 0 8px;
+}
+
+.loly .btn{
+    margin-top: 1em;
+    box-shadow: 0 0 6px #fa73d9;
+    border: 2px solid #fa73d9;
+    background-color: transparent;
+    font-size: .9em;
+    color: #fa73d9;
+    padding: 1em 2em;
+    border-radius: 4em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.loly .btn:hover{
+    color: #eee;
+    text-decoration: none;
+    border-bottom: 1px solid #f88cdd;
+}
