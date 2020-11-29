@@ -3,7 +3,6 @@ import { gql, useQuery } from '@apollo/client';
 import '../component/style/list.css'
 import Loly from '../component/loly'
 import { Link } from 'gatsby'
-import { useQueryParam, StringParam } from "use-query-params";
 
 const GET_LOLYS = gql`
 {
@@ -27,17 +26,10 @@ const GET_LOLYS = gql`
 
 function lolyList({ location }) {
 
-    // const [foo, setFoo] = useQueryParam("id", StringParam);
     const id = location.search.slice(4, 14)
-    let dd = location.href
-    // let n = dd.slice(0 , 33)
-    // let dummy = dd.slice(0 , 30)
-    //  console.log("loc" , dummy)
-
-
     const { loading, error, data } = useQuery(GET_LOLYS);
 
-
+  const url = "https://jam-stack-lolypop.netlify.app/lolyList/?id="
 
 
     if (loading) {
@@ -60,7 +52,7 @@ function lolyList({ location }) {
     )
         : null
 
-    console.log("Result", Result)
+    console.log("Result", )
 
 
 
@@ -86,7 +78,7 @@ function lolyList({ location }) {
                                 <div className="form-container">
                                     <div className="link">
 
-                                        <i> <a href={`${loly.link}`}>{`${loly.link}`}</a></i>
+                                        <i> <a href={`${url}${loly.link}`}>{`${url}${loly.link}`}</a></i>
                                     </div>
                                     <div className="Data">
 
