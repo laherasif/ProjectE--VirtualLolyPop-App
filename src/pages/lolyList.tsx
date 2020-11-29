@@ -30,9 +30,9 @@ function lolyList({ location }) {
     // const [foo, setFoo] = useQueryParam("id", StringParam);
     const id = location.search.slice(4, 14)
     let dd = location.href
-    let n = dd.slice(0 , 33)
-    let dummy = dd.slice(0 , 30)
-     console.log("loc" , dummy)
+    // let n = dd.slice(0 , 33)
+    // let dummy = dd.slice(0 , 30)
+    //  console.log("loc" , dummy)
 
 
     const { loading, error, data } = useQuery(GET_LOLYS);
@@ -86,7 +86,7 @@ function lolyList({ location }) {
                                 <div className="form-container">
                                     <div className="link">
 
-                                        <i> <a href={`${n}/${loly.link}`}>{`${dummy}/${loly.link}`}</a></i>
+                                        <i> <a href={`${loly.link}`}>{`${loly.link}`}</a></i>
                                     </div>
                                     <div className="Data">
 
