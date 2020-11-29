@@ -27,12 +27,12 @@ const GET_LOLYS = gql`
 
 function lolyList({ location }) {
 
-    const [foo, setFoo] = useQueryParam("id", StringParam);
-    const id = location.search.slice(4, 14)
-    let dd = location.href
-    let n = dd.slice(0 , 33)
-    let dummy = dd.slice(0 , 30)
-     console.log("loc" , dummy)
+    // const [foo, setFoo] = useQueryParam("id", StringParam);
+    // const id = location.search.slice(4, 14)
+    // let dd = location.href
+    // let n = dd.slice(0 , 33)
+    // let dummy = dd.slice(0 , 30)
+    //  console.log("loc" , dummy)
 
 
     const { loading, error, data } = useQuery(GET_LOLYS);
@@ -50,17 +50,17 @@ function lolyList({ location }) {
     }
 
 
-    let Result = data ? data.LolyData.filter(item => {
-        if (item.link === id) {
-            return item
+    // let Result = data ? data.LolyData.filter(item => {
+    //     if (item.link === id) {
+    //         return item
 
-        }
+    //     }
 
-    }
-    )
-        : null
+    // }
+    // )
+    //     : null
 
-    console.log("Result", Result)
+    // console.log("Result", Result)
 
 
 
@@ -74,7 +74,7 @@ function lolyList({ location }) {
 
                 <div className="main-container">
 
-                    {Result.map((loly, index) => {
+                    {/* {Result.map((loly, index) => {
                         return (
 
                             <div className="Loly-container">
@@ -101,7 +101,7 @@ function lolyList({ location }) {
                                 </div>
                             </div>
                         )
-                    })}
+                    })} */}
 
                 </div>
 
