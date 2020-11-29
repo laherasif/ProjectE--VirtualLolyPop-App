@@ -2,7 +2,7 @@ import React from "react"
 import '../component/style/index.css'
 import { Link  } from 'gatsby'
 import LolyTwo from "../component/loly2"
-import { navigate } from 'gatsby'
+// import { navigate } from 'gatsby'
 const Home = () => {
     
     return (
@@ -18,7 +18,7 @@ const Home = () => {
             <LolyTwo />
 
             <div style={{marginTop:'30px'}}>
-                <button className="btn" onClick={()=> navigate('/addLoly')}>Make a new Loly to send a friend</button>
+                <Link  className="btn" to='/addLoly'>Make a new Loly to send a friend</Link>
             </div>
 
             </div>

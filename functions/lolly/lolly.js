@@ -18,7 +18,8 @@ const typeDefs = gql`
     link: String!
   }
   type Mutation {
-    addLoly(c1: String!, 
+    addLoly(
+      c1: String!, 
       c2: String!,
       c3: String!,
       rec: String!,

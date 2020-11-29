@@ -3,6 +3,8 @@ import { gql, useQuery } from '@apollo/client';
 import '../component/style/list.css'
 import Loly from '../component/loly'
 import { Link } from 'gatsby'
+import { useQueryParam, StringParam } from "use-query-params";
+
 const GET_LOLYS = gql`
 {
      
@@ -25,7 +27,7 @@ const GET_LOLYS = gql`
 
 function lolyList({ location }) {
 
-
+    const [foo, setFoo] = useQueryParam("id", StringParam);
     const id = location.search.slice(4, 14)
     let dd = location.href
     let n = dd.slice(0 , 33)
@@ -92,7 +94,7 @@ function lolyList({ location }) {
                                         <p>{loly.msg}</p>
                                         <h4 >__{loly.sender}</h4>
                                     </div>
-                                    <h3>{loly.sender} made this virtual lollipop for you. You can <Link to="/">make your own </Link>to send to a friend who deserve some sugary treat which won't rot their teeth...
+                                    <h3>{loly.sender} made this virtual lollipop for you. You can <Link to="/addLoly">make your own </Link>to send to a friend who deserve some sugary treat which won't rot their teeth...
 
                                          </h3>
 

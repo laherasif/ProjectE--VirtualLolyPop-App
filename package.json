@@ -16,11 +16,14 @@
   "license": "0BSD",
   "dependencies": {
     "@apollo/client": "^3.2.5",
+    "apollo-server-lambda": "^2.19.0",
     "faunadb": "^3.0.1",
     "gatsby": "^2.25.3",
+    "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-source-graphql": "^2.8.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "shortid": "^2.2.16"
+    "shortid": "^2.2.16",
+    "use-query-params": "^1.1.9"
   }
 }

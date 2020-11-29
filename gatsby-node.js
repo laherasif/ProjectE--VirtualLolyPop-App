@@ -8,14 +8,7 @@ exports.createPages = async ({actions, graphql}) => {
   query MyQuery {
     Lollies {
       LolyData {
-        c1
-        c2
-        c3
         link
-        id
-        msg
-        rec
-        sender
       }
     }
   }

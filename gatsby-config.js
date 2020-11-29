@@ -8,5 +8,6 @@ module.exports = {
               url: "http://localhost:8888/.netlify/functions/lolly",
             },
           },
+          "gatsby-plugin-use-query-params",
     ]
 }

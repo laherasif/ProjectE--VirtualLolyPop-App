@@ -1,29 +1,29 @@
 import React from 'react'
 import './style/list.css'
-import gql from "graphql-tag"
+import {graphql} from 'gatsby'
 import { useQuery } from "@apollo/client"
 
-export const query = gql`
-  query getLollyByPath($link: String!) {
-    getLollyByPath(link: $link) {
+export const query = graphql`
+query MyQuery($link : String!){
+    Lollies {
+      getLollyByPath(link: $link) {
         c1
         c2
         c3
-        link
         id
         msg
         rec
         sender
+      }
     }
   }
-`
+  
+  `
+  
 
-function template({ pageContext  }) {
-    let {lolyDetails } = pageContext
-    const { data, loading, error } = useQuery(query, {
-        variables: { link: lolyDetails.link },
-      })
-      console.log(data);
+function template({ data  }) {
+    console.log(data)
+   
     return (
         <div>
             <div>
