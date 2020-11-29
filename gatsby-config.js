@@ -5,9 +5,10 @@ module.exports = {
             options: {
               typeName: "Lolly",
               fieldName: "Lollies",
-              // url: "http://localhost:8888/.netlify/functions/lolly",
+              url: "",
+              // http://localhost:8888/.netlify/functions/lolly
             },
           },
-          "gatsby-plugin-use-query-params",
+          
     ]
 }
