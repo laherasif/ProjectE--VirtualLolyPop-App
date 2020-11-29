@@ -78,7 +78,7 @@ function lolyList({ location }) {
                                 <div className="form-container">
                                     <div className="link">
 
-                                        <i> <a href={`${url}${loly.link}`}>{`${url}${loly.link}`}</a></i>
+                                        <i> <a href={`${url}${loly.link}`} target="_blank">{`${url}${loly.link}`}</a></i>
                                     </div>
                                     <div className="Data">
 
