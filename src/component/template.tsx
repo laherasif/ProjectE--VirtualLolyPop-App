@@ -1,28 +1,11 @@
 import React from 'react'
 import './style/list.css'
-import {graphql} from 'gatsby'
-import { useQuery } from "@apollo/client"
+// import {graphql} from 'gatsby'
+// import { useQuery } from "@apollo/client"
 
-export const query = graphql`
-query MyQuery($link : String!){
-    Lollies {
-      getLollyByPath(link: $link) {
-        c1
-        c2
-        c3
-        id
-        msg
-        rec
-        sender
-      }
-    }
-  }
-  
-  `
-  
 
-function template({ data  }) {
-    console.log(data)
+
+function template() {
    
     return (
         <div>
